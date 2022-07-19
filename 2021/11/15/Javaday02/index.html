@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Mist","darkmode":false,"version":"8.8.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+<meta name="description" content="** 软件研发流程 **产品经理（需求调研，需求整理，产品原型图绘制），项目启动会，UI设计师（UI设计）项目研发•    前端：Android应用开发，Android系统开发，IOS应用开发， 网页：（大前端开发工程师，html,css,js…) ，微信小程序，游戏开发。•    后端：Java开发（JavaSE,JavaEE,html,css,js,sql）,PHP,Pythoh, .net测">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Javaday02">
+<meta property="og:url" content="http://example.com/2021/11/15/Javaday02/index.html">
+<meta property="og:site_name" content="Fritz1u">
+<meta property="og:description" content="** 软件研发流程 **产品经理（需求调研，需求整理，产品原型图绘制），项目启动会，UI设计师（UI设计）项目研发•    前端：Android应用开发，Android系统开发，IOS应用开发， 网页：（大前端开发工程师，html,css,js…) ，微信小程序，游戏开发。•    后端：Java开发（JavaSE,JavaEE,html,css,js,sql）,PHP,Pythoh, .net测">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-11-15T08:06:26.000Z">
+<meta property="article:modified_time" content="2022-07-19T11:52:08.328Z">
+<meta property="article:author" content="Fritz1u">
+<meta property="article:tag" content="Java">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://example.com/2021/11/15/Javaday02/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2021/11/15/Javaday02/","path":"2021/11/15/Javaday02/","title":"Javaday02"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Javaday02 | Fritz1u</title>
+  
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">Fritz1u</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
+        <li class="menu-item menu-item-schedule"><a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>Schedule</a></li>
+        <li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>Sitemap</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BD%AF%E4%BB%B6%E7%A0%94%E5%8F%91%E6%B5%81%E7%A8%8B"><span class="nav-number">1.</span> <span class="nav-text">** 软件研发流程 **</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BD%AF%E4%BB%B6%E5%85%AC%E5%8F%B8%E7%9A%84%E6%80%A7%E8%B4%A8"><span class="nav-number">2.</span> <span class="nav-text">** 软件公司的性质 **</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BC%96%E5%86%99%E7%AC%AC%E4%B8%80%E4%B8%AAjava%E7%A8%8B%E5%BA%8F"><span class="nav-number">3.</span> <span class="nav-text">编写第一个java程序</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BC%96%E7%A0%81%E6%A0%BC%E5%BC%8F"><span class="nav-number">4.</span> <span class="nav-text">** 编码格式 **</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B3%A8%E9%87%8A"><span class="nav-number">5.</span> <span class="nav-text">注释</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BE%93%E5%87%BA"><span class="nav-number">6.</span> <span class="nav-text">输出</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="nav-number">7.</span> <span class="nav-text">数据类型</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2"><span class="nav-number">8.</span> <span class="nav-text">数据类型转换</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%A0%87%E8%AF%86%E7%AC%A6"><span class="nav-number">9.</span> <span class="nav-text">标识符</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Fritz1u"
+      src="/images/touxiang.png">
+  <p class="site-author-name" itemprop="name">Fritz1u</p>
+  <div class="site-description" itemprop="description">回首天涯，一抹斜阳，数点寒鸦</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/FRITZ1U" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;FRITZ1U" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:liuyihui010210@outlook.com" title="E-Mail → mailto:liuyihui010210@outlook.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/u/5656250578" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;u&#x2F;5656250578" rel="noopener" target="_blank"><i class="fab fa-weibo fa-fw"></i>Weibo</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/fritz1u?s=09" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;fritz1u?s&#x3D;09" rel="noopener" target="_blank"><i class="fab fa-twitter fa-fw"></i>Twitter</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://youtube.com/liuyihui010210@gmail.com" title="YouTube → https:&#x2F;&#x2F;youtube.com&#x2F;liuyihui010210@gmail.com" rel="noopener" target="_blank"><i class="fab fa-youtube fa-fw"></i>YouTube</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll site-overview-item animated">
+    <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://littlestate.github.io/" title="https:&#x2F;&#x2F;littlestate.github.io" rel="noopener" target="_blank">xiaobang</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://by0228.github.io/" title="https:&#x2F;&#x2F;by0228.github.io" rel="noopener" target="_blank">zhaobin</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://lsy-73.github.io/" title="https:&#x2F;&#x2F;lsy-73.github.io" rel="noopener" target="_blank">spacedog</a>
+        </li>
+    </ul>
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/11/15/Javaday02/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/touxiang.png">
+      <meta itemprop="name" content="Fritz1u">
+      <meta itemprop="description" content="回首天涯，一抹斜阳，数点寒鸦">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Fritz1u">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Javaday02
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-11-15 16:06:26" itemprop="dateCreated datePublished" datetime="2021-11-15T16:06:26+08:00">2021-11-15</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2022-07-19 19:52:08" itemprop="dateModified" datetime="2022-07-19T19:52:08+08:00">2022-07-19</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h1 id="软件研发流程"><a href="#软件研发流程" class="headerlink" title="** 软件研发流程 **"></a>** 软件研发流程 **</h1><p>产品经理（需求调研，需求整理，产品原型图绘制），项目启动会，<br>UI设计师（UI设计）<br>项目研发<br>•    前端：Android应用开发，Android系统开发，IOS应用开发， 网页：（大前端开发工程师，html,css,js…) ，微信小程序，游戏开发。<br>•    后端：Java开发（JavaSE,JavaEE,html,css,js,sql）,PHP,Pythoh, .net<br>测试开发工程师（测试） —–上线——运维开发工程师（运维）</p>
+<span id="more"></span>
+<hr>
+<h1 id="软件公司的性质"><a href="#软件公司的性质" class="headerlink" title="** 软件公司的性质 **"></a>** 软件公司的性质 **</h1><p>自研<br>阿里巴巴（淘宝，支付宝），腾讯（QQ，微信），京东，华为（鸿蒙），字节跳动（抖音）<br>软件为公司生命核心<br>外包<br>东软，中软，软通…<br>软件作为商品进行买卖</p>
+<hr>
+<h1 id="编写第一个java程序"><a href="#编写第一个java程序" class="headerlink" title="编写第一个java程序"></a><strong>编写第一个java程序</strong></h1><ol>
+<li>   创建一个文本文件。</li>
+<li>编写<br>class HelloWorld{<br> public static void main (String[] args){<pre><code> System.out.println(&quot;first java&quot;);
+</code></pre>
+ }<br>}<br> 注意：<br>•    所有的标点符号,都是在英文状态下输入的<br>•    注意空格<br>•    大小写要正确</li>
+<li>文件后缀改为 .java</li>
+<li>进入dos，打开文件所在位置</li>
+<li>编译   javac 文件名.java</li>
+<li>运行  java 生成的class文件名（不带后缀）<br>注意:<br>•    文件名不要使用特殊字符,包括空格,但是可以使用_,$<br>•    文件名不要使用数字开头,如111.java<br>•    建议不要使用中文作为文件名<br>•    class之后,大括号之前称为类名 类名不要使用特殊字符,不要使用数字开头,不建议使用中文 类名建议使用大驼峰命名法进行命名 如果一个单词作为类名,该单词首字母大写 编码格式 注释 使用场景 java代码注释分类 如果多个单词作为类名,每个单词首字母大写 做到见名知意 类名可以自定义<br>5,文件名可以与普通类名不一致<br>6,生成的class文件的名称其实是类名<br>7,一个java文件中,可以有多个普通类.每个类都会生成一个对应的class文件<br>8,同一个文件夹中类名不能重复<br>9,如果class前有public,那么这个类就是公共类.公共类的类名必须与文件名一致.一个java文件中只 有一个公共类<br>10,建议一个java文件中只写一个类</li>
+</ol>
+<hr>
+<h1 id="编码格式"><a href="#编码格式" class="headerlink" title="** 编码格式 **"></a>** 编码格式 **</h1><p>GBK 与UTF-8支持中文<br>ascll指定字符对应数字</p>
+<hr>
+<h1 id="注释"><a href="#注释" class="headerlink" title="注释"></a><strong>注释</strong></h1><p>1,在代码中加入文字说明,方便后期对代码的阅读,但是不能影响代码的正常运行,此时使用注释(解释说明)<br>2,在优化维护代码时,不要急着将老代码删除,而是将其注释.直到新代码可以正常替换老代码时在进行删除(注释无用代码)<br>单行注释： //内容<br>多行注释：/*     …   <em>/<br>文档注释:   /</em>*    …    */</p>
+<hr>
+<h1 id="输出"><a href="#输出" class="headerlink" title="输出"></a><strong>输出</strong></h1><p>给控制台打印内容<br>System.out.print()   必须有内容，不换行<br>System.out.println()  换行</p>
+<hr>
+<h1 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a><strong>数据类型</strong></h1><p>整数：<br>byte:1字节 8位 -2^7 ~ 2^7-1<br>short:2字节 16位 -2^15<del>2^15-1<br>int:4字节 32位 -2^31</del>2^31-1 默认<br>long:8字节 64位 -2^63<del>2^63-1 给值后加l或L<br>浮点型<br>float:4字节 32位 -2^31</del>2^31-1 给值后加F或f<br>double:8字节 64位 -2^63~2^63-1 默认<br>布尔<br>boolean: true  and  false<br>字符<br>char：2字节 16位  ‘ ‘<br>引用数据类型<br>所有类的对象,都属于引用数据类型,引用数据类型有无数种<br>字符串: “” 注意:字符串的值必须使用双引号包裹</p>
+<hr>
+<h1 id="数据类型转换"><a href="#数据类型转换" class="headerlink" title="数据类型转换"></a><strong>数据类型转换</strong></h1><p>小类型转大类型 自动转换<br>大类型转小类型 强制转换<br>语法:(小类型) 值 将数字97转换为char对应的字符:(char)97<br>注意: 字符与字符相加减,结果为int<br>boolean(布尔)不参与转换<br>字符串与任何类型拼接,都是字符串</p>
+<hr>
+<h1 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a><strong>标识符</strong></h1><p>名称:类名,变量名,接口名,枚举名,注解名,对象名,包名,方法名,属性名…<br>所有的标识符都是自定义的<br>命名规则(潜规则): 类名,接口名,枚举名,注解名:大驼峰<br>大驼峰:每个单词是的首字母大写 变量名,对象名,方法名<br>小驼峰:<br>如果只有一个单词作为名称,那么该单词首字母小写<br>如果有多个单词作为名称,第一个单词首字母小写,其他单词首字母大写<br>包名 全小写<br>常量名 全大写<br>注意:<br>1,做到见名知意<br>2,不要使用数字开头<br>3,不要使用特殊字符,建议不要使用中文<br>4,特殊字符_与$可以使用<br>5,包名的命名潜规则: com.公司名称缩写.包名<br>如: com.qf.demo com.项目名称.包名<br>如: com.weixin.shiti<br>6,全大写时使用单词之间使用下划线连接<br>7,不能使用关键字或保留字进行命名</p>
+<p>关键字 保留字不做赘述。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Java/" rel="tag"># Java</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/10/15/Blog%E6%90%AD%E5%BB%BA/" rel="prev" title="Blog搭建">
+                  <i class="fa fa-chevron-left"></i> Blog搭建
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2021/11/15/CTF%E5%85%A5%E9%97%A8/" rel="next" title="CTF入门简介">
+                  CTF入门简介 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Fritz1u</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" rel="noopener" target="_blank">NexT.Mist</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
